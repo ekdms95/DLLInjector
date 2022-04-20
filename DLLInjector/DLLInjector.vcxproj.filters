@@ -1,2 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{57c8445e-3894-4ceb-9414-d669a6be4d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handle Hijacking">
+      <UniqueIdentifier>{136b9875-76ec-4f54-bf44-a9c6e5c29858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NT">
+      <UniqueIdentifier>{4406d408-6e5f-4080-8eab-a010ede96d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Injection">
+      <UniqueIdentifier>{fbd0fec1-3dc9-48a6-a06e-8b6617e5a169}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Handle Hijacking\Handle Hijacking.cpp">
+      <Filter>Handle Hijacking</Filter>
+    </ClCompile>
+    <ClCompile Include="Injection.cpp">
+      <Filter>Injection</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Handle Hijacking\Handle Hijacking.h">
+      <Filter>Handle Hijacking</Filter>
+    </ClInclude>
+    <ClInclude Include="Injection.h">
+      <Filter>Injection</Filter>
+    </ClInclude>
+    <ClInclude Include="NT Header.h">
+      <Filter>NT</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
